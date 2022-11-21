@@ -1,0 +1,248 @@
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+
+body{
+
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins' sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+ul
+{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section{
+
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    opacity: 1;
+    padding: 0 30px;
+}
+
+.main-content{
+
+    padding-left: 16.875rem;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+
+}
+
+.container{
+
+    max-width: 1600px;
+    width: 100%;
+    margin:auto;
+}
+
+.section .container {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-title{
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 150px;
+    margin-bottom: 60px;
+    
+}
+
+.section-title h2{
+
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section-title p{
+
+    font-size: 20px;
+    margin-top: 40px;
+    color: var(--text-black-900);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section-title a {
+
+    font-size: 25px;
+    color: var(--text-black-900);
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+/* aside */
+
+.aside{
+    
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-right: 1px solid var(--bg-black-50);
+}
+.aside .logo{
+
+    position: absolute;
+    top: 50px;
+    text-transform: capitalize;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.aside .logo a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.aside .logo a::before {
+
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after {
+
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+
+.aside .nav {
+
+    margin-top: 50px;
+}
+
+.aside .nav li{
+
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a {
+
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--text-black-900);
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.aside .nav li a.active {
+
+    color: var(--skin-color);
+}
+
+.aside .nav li a i {
+
+    margin-right: 15px;
+}
+
+/* HOME */
+
+.home{
+
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+.home .home-info{
+
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.home .home-info h2 {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+h3.hello{
+    font-size: 28px;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3.hello span {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--skin-color)
+}
+
+h3.profissao {
+    font-size: 30px;
+    margin: 15px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.escrevendo {
+    color: var(--skin-color);
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home-info a{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: -30px;
+}
